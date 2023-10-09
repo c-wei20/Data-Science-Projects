@@ -1,6 +1,8 @@
 # Time Series Forecasting of Global Renewable Energy Production: A Comparative Analysis and Implementation
 This is a Data Analytics final-year project for the study Bachelor's Degree in Computer Science with a specialism in Data Analytics.
 
+This project mainly focuses on the development of time series forecasting models and their comparative analysis， followed by the implementation of a forecasting dashboard.
+
 This project contributed to resolve the following problems with its aim and objectives:
 ## Problem Statements
 1. Lack of an accurate and consistent decarbonization tracking system.
@@ -25,7 +27,7 @@ The datasets used in this project include 8 different free datasets from the Int
 
 **Main Dataset:**
 
-Monthly Electricity Statistics
+Monthly Electricity Statistics (Updated July 2023)
 - A collection of data related to the monthly statistical electricity production which also includes renewable energy production such as hydropower, wind, solar, and geothermal energy from the member countries of the Organisation for Economic Co-operation and Development (OECD) and their key partner countries since the latest year of 2010 to March 2023. 
 - A total of 131200 records and 6 variables, of which 5 are qualitative variables and only one quantitative variable
 - Source: https://www.iea.org/data-and-statistics/data-product/monthlyelectricity-statistics
@@ -41,6 +43,8 @@ Including:
 5. Monthly Temperature
 6. Monthly Global Horizontal Irradiance (GHI)
 7. Monthly Direct Normal Radiation (DNI)
+
+Source: http://weatherforenergydata.iea.org/National%20data/Monthly%20values/CSV/
 
 Among those datasets, Precipitation is used for the forecasting of Hydroelectricity Production, Wind Speed datasets are used for the forecasting of Wind Energy Production, and other datasets are used for the forecasting of Solar Energy Production.
 
