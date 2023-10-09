@@ -37,6 +37,7 @@ Including:
 5. Monthly Temperature
 6. Monthly Global Horizontal Irradiance (GHI)
 7. Monthly Direct Normal Radiation (DNI)
+
 Among those datasets, Precipitation is used for the forecasting of Hydroelectricity Production, Wind Speed datasets are used for the forecasting of Wind Energy Production, and other datasets are used for the forecasting of Solar Energy Production.
 
 
