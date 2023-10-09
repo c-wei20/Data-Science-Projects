@@ -1,2 +1,3 @@
 # Data-Science-Projects
- This repository include all the data science projects during study
+This repository includes several data science projects during the study
+
