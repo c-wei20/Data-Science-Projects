@@ -22,12 +22,16 @@ To evaluate different time series forecasting models and techniques to determine
 
 ## Dataset
 The datasets used in this project include 8 different free datasets from the International Energy Agency (IEA) official website. Among those datasets, one dataset is the main dataset, the **Monthly Electricity Statistics dataset** and another **7 datasets are monthly weather-related datasets for renewable energy**.
+
 **Main Dataset:**
+
 Monthly Electricity Statistics
 - A collection of data related to the monthly statistical electricity production which also includes renewable energy production such as hydropower, wind, solar, and geothermal energy from the member countries of the Organisation for Economic Co-operation and Development (OECD) and their key partner countries since the latest year of 2010 to March 2023. 
 - A total of 131200 records and 6 variables, of which 5 are qualitative variables and only one quantitative variable
 - Source: https://www.iea.org/data-and-statistics/data-product/monthlyelectricity-statistics
+
 **Monthly Weather-Related Datasets:**
+
 All the datasets have a total of 127971 records and 5 variables.
 Including:
 1. Monthly Precipitation
