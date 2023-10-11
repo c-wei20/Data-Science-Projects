@@ -81,69 +81,111 @@ The above countries are selected to represent the global based on the following 
 
 
 ## Result & Discussion
+Time Series Models Evaluation of Hydro Energy Production:
+| Countries         | Model             | MAE    | MSE      | RMSE   |
+|-------------------|-------------------|------- |--------- |------- |
+| The United States | ARIMA / SARIMA    | 125.85 | 20092.77| 141.74 |
+|                   | SVR               | **2.920**  | **13.29**   | **3.64**   |
+|                   | ANN               | 6.702  | 70.34   | 8.38   |
+|                   | Univariate LSTM   | 4.04   | 27.36   | 5.23   |
+|                   | Multivariable LSTM| 3.36   | 40.90   | 6.39   |
+| Canada            | ARIMA / SARIMA    | 102.24 | 12317.84| 110.98 |
+|                   | SVR               | 2.15   | 7.62    | 2.76   |
+|                   | ANN               | 4.45   | 34.47   | 5.87   |
+|                   | Univariate LSTM   | **1.80**   | **7.43**    | **2.72**   |
+|                   | Multivariable LSTM| 4.16   | 28.27   | 5.31   |
+| Germany           | ARIMA / SARIMA    | 7.41   | 85.50   | 9.24   |
+|                   | SVR               | 6.32   | 0.04    | 0.22   |
+|                   | ANN               | 0.66   | 0.62    | 0.78   |
+|                   | Univariate LSTM   | **0.1233** | **0.0478**  | **0.21**   |
+|                   | Multivariable LSTM| 0.337  | 0.182   | 0.42   |
+| Brazil            | ARIMA / SARIMA    | 312.47 | 132661.41| 364.22 |
+|                   | SVR               | **3.67**   | **21.16**   | **4.60**   |
+|                   | ANN               | 14.44  | 340.81  | 18.46  |
+|                   | Univariate LSTM   | 4.81   | 32.55   | 5.70   |
+|                   | Multivariable LSTM| 7.077  | 104.28  | 10.21  |
+| China             | ARIMA / SARIMA    | 958.99 | 1280083.76| 1131.40|
+|                   | SVR               | 713.65 | 1206.17 | 34.730 |
+|                   | ANN               | 115.07 | 16882.53| 129.93 |
+|                   | Univariate LSTM   | **23.79**  | **932.43**  | **30.53**  |
+|                   | Multivariable LSTM| 38.89  | 2276.14 | 47.70  |
+| Australia         | ARIMA / SARIMA    | 6.04   | 53.46   | 7.31   |
+|                   | SVR               | 0.15   | **0.04**    | **0.20**   |
+|                   | ANN               | 1.5    | 2.66    | 1.6    |
+|                   | Univariate LSTM   | **0.13**   | **0.04**    | 0.21   |
+|                   | Multivariable LSTM| 0.29   | 0.138   | 0.372  |
+
+Time Series Models Evaluation of Wind Energy Production:
+| Countries         | Model             | MAE    | MSE      | RMSE   |
+|-------------------|-------------------|------- |--------- |------- |
+| The United States | ARIMA / SARIMA    | 217.74 | 67218.49 | 259.26 |
+|                   | XGBoost           | 225.58 | 71582.84 | 267.54 |
+|                   | SVR               | **6.91**   | 70.99   | 8.42   |
+|                   | GRU               | 7.005  | **51.93**   | **7.20**   |
+|                   | Univariate LSTM   | 54.28  | 4081.45 | 63.88  |
+|                   | Multivariable LSTM| 125.33 | 41920.38| 204.74 |
+| Canada            | ARIMA / SARIMA    | 13.95  | 306.62  | 17.51  |
+|                   | XGBoost           | 8.94   | 117.19  | 10.82  |
+|                   | SVR               | 0.67   | 0.66   | 0.81   |
+|                   | GRU               | **0.33**   | **0.15**   | **0.38**   |
+|                   | Univariate LSTM   | 1.37   | 2.48   | 1.57   |
+|                   | Multivariable LSTM| 0.96   | 2.00   | 1.41   |
+| Germany           | ARIMA / SARIMA    | 78.60  | 11826.82| 108.75 |
+|                   | XGBoost           | 60.84  | 6144.86 | 78.38  |
+|                   | SVR               | 4.01   | 27.30   | 5.22   |
+|                   | GRU               | **3.04**   | **10.7**   | **3.27**   |
+|                   | Univariate LSTM   | 4.04   | 31.92   | 5.65   |
+|                   | Multivariable LSTM| 4.47   | 47.77   | 6.91   |
+| Brazil            | ARIMA / SARIMA    | 156.67 | 28600.81| 169.11 |
+|                   | XGBoost           | 58.34  | 4436.00 | 66.60  |
+|                   | SVR               | 1.96   | 5.36   | 2.31   |
+|                   | GRU               | **1.17**   | **1.67**   | **1.29**   |
+|                   | Univariate LSTM   | 1.92   | 6.71   | 2.59   |
+|                   | Multivariable LSTM| 10.34  | 320.44  | 17.90  |
+| China             | ARIMA / SARIMA    | 331.73 | 161638.67| 402.04 |
+|                   | XGBoost           | 665.66 | 558968.31| 747.64 |
+|                   | SVR               | 19.40  | 599.75  | 24.48  |
+|                   | GRU               | **4.18**   | **46.55**   | **6.82**   |
+|                   | Univariate LSTM   | 64.67  | 8907.43 | 94.37  |
+|                   | Multivariable LSTM| 213.75 | 83769.36| 289.42 |
+| Australia         | ARIMA / SARIMA    | 11.08  | 177.69  | 13.33  |
+|                   | XGBoost           | 18.16  | 475.81  | 21.81  |
+|                   | SVR               | 0.47   | 0.31   | 0.55   |
+|                   | GRU               | **0.108**  | **0.022**  | **0.149**  |
+|                   | Univariate LSTM   | 1.20   | 2.542  | 1.594  |
+|                   | Multivariable LSTM| 5.01   | 82.53  | 9.08   |
+
 Time Series Models Evaluation of Solar Energy Production:
 | Countries       | Model             | MAE   | MSE      | RMSE  |
 |-----------------|-------------------|-------|--------- |-------|
 | The United States | ARIMA / SARIMA  | 57.780| 6215.18  | 78.83 |
 |                  | SVR               | 5.81  | 41.06    | 6.40  |
-|                  | GRU               | 1.793 | 7.88    | 2.807 |
+|                  | GRU               | **1.793** | **7.88**    | **2.807** |
 |                  | Univariate LSTM  | 141.12| 34267.08 | 185.11|
 |                  | Multivariable LSTM| 154.74| 42796.84 | 206.87|
 | Canada          | ARIMA / SARIMA  | 2.80  | 10.761  | 3.28  |
 |                  | SVR               | 0.19  | 0.077   | 0.279 |
-|                  | GRU               | 0.077 | 0.008   | 0.093 |
+|                  | GRU               | **0.077** | **0.008**   | **0.093** |
 |                  | Univariate LSTM  | 2.130 | 13.764  | 3.70  |
 |                  | Multivariable LSTM| 1.834 | 6.21   | 2.49  |
 | Germany         | ARIMA / SARIMA  | 48.32 | 3236.15 | 56.88 |
 |                  | SVR               | 1.34  | 2.79   | 1.67  |
-|                  | GRU               | 0.61  | 0.497  | 0.705 |
+|                  | GRU               | **0.61**  | **0.497**  | **0.705** |
 |                  | Univariate LSTM  | 3.183 | 26.94  | 5.19  |
 |                  | Multivariable LSTM| 8.285 | 221.23 | 14.87 |
 | Brazil          | ARIMA / SARIMA  | 78.37 | 7818.59 | 88.42 |
-|                  | SVR               | 0.90  | 1.321  | 1.149 |
+|                  | SVR               | **0.90**  | **1.321**  | **1.149** |
 |                  | ANN               | 1.99  | 9.06   | 3.01  |
 |                  | Univariate LSTM  | 14.95 | 462.7  | 21.51 |
 |                  | Multivariable LSTM| 28.26 | 1392.884| 37.32 |
 | China           | ARIMA / SARIMA  | 163.25| 37118.28| 192.66|
 |                  | SVR               | 8.084 | 85.89  | 9.268 |
-|                  | GRU               | 4.23  | 20.15  | 4.48  |
+|                  | GRU               | **4.23**  | **20.15**  | **4.48**  |
 |                  | Univariate LSTM  | 19.65 | 509.04 | 22.56 |
 |                  | Multivariable LSTM| 180.924| 52261.90| 228.60|
 | Australia       | ARIMA / SARIMA  | 45.54 | 2727.24 | 52.223|
 |                  | SVR               | 1.98  | 6.08   | 2.46  |
-|                  | GRU               | 0.31  | 0.25   | 0.501 |
-|                  | Univariate LSTM  | 3.43  | 37.17  | 6.09  |
-|                  | Multivariable LSTM| 10.40 | 287.17 | 16.94 |
-| Countries       | Model             | MAE   | MSE      | RMSE  |
-|-----------------|-------------------|-------|--------- |-------|
-| The United States | ARIMA / SARIMA  | 57.780| 6215.18  | 78.83 |
-|                  | SVR               | 5.81  | 41.06    | 6.40  |
-|                  | GRU               | 1.793 | 7.88    | 2.807 |
-|                  | Univariate LSTM  | 141.12| 34267.08 | 185.11|
-|                  | Multivariable LSTM| 154.74| 42796.84 | 206.87|
-| Canada          | ARIMA / SARIMA  | 2.80  | 10.761  | 3.28  |
-|                  | SVR               | 0.19  | 0.077   | 0.279 |
-|                  | GRU               | 0.077 | 0.008   | 0.093 |
-|                  | Univariate LSTM  | 2.130 | 13.764  | 3.70  |
-|                  | Multivariable LSTM| 1.834 | 6.21   | 2.49  |
-| Germany         | ARIMA / SARIMA  | 48.32 | 3236.15 | 56.88 |
-|                  | SVR               | 1.34  | 2.79   | 1.67  |
-|                  | GRU               | 0.61  | 0.497  | 0.705 |
-|                  | Univariate LSTM  | 3.183 | 26.94  | 5.19  |
-|                  | Multivariable LSTM| 8.285 | 221.23 | 14.87 |
-| Brazil          | ARIMA / SARIMA  | 78.37 | 7818.59 | 88.42 |
-|                  | SVR               | 0.90  | 1.321  | 1.149 |
-|                  | ANN               | 1.99  | 9.06   | 3.01  |
-|                  | Univariate LSTM  | 14.95 | 462.7  | 21.51 |
-|                  | Multivariable LSTM| 28.26 | 1392.884| 37.32 |
-| China           | ARIMA / SARIMA  | 163.25| 37118.28| 192.66|
-|                  | SVR               | 8.084 | 85.89  | 9.268 |
-|                  | GRU               | 4.23  | 20.15  | 4.48  |
-|                  | Univariate LSTM  | 19.65 | 509.04 | 22.56 |
-|                  | Multivariable LSTM| 180.924| 52261.90| 228.60|
-| Australia       | ARIMA / SARIMA  | 45.54 | 2727.24 | 52.223|
-|                  | SVR               | 1.98  | 6.08   | 2.46  |
-|                  | GRU               | 0.31  | 0.25   | 0.501 |
+|                  | GRU               | **0.31**  | **0.25**   | **0.501** |
 |                  | Univariate LSTM  | 3.43  | 37.17  | 6.09  |
 |                  | Multivariable LSTM| 10.40 | 287.17 | 16.94 |
 
