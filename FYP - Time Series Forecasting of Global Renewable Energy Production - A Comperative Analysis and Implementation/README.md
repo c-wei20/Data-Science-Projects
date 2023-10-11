@@ -52,7 +52,7 @@ Due to time and workload constraints, this project has selected 3 renewable ener
 
 **Renewable Energy Selection:**
 
-This project selected 3 main renewable energy sources that generate electricity, which are hydro, wind, and solar renewable energy. These selected renewable resources generated 91% of renewable electricity in 2021.
+This project selected 3 main renewable energy sources that generate electricity, which are **hydro**, **wind**, and **solar** renewable energy. These selected renewable resources generated 91% of renewable electricity in 2021.
 
 **Countries Selection:**
 
