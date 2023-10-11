@@ -1,4 +1,4 @@
-![image](https://github.com/c-wei20/Data-Science-Projects/assets/80091094/52aa005e-65c4-4006-8839-ce17c8281e58)# Time Series Forecasting of Global Renewable Energy Production: A Comparative Analysis and Implementation
+# Time Series Forecasting of Global Renewable Energy Production: A Comparative Analysis and Implementation
 This is a Data Analytics final-year project for the study Bachelor's Degree in Computer Science with a specialism in Data Analytics.
 
 This project mainly focuses on the development of time series forecasting models and their comparative analysis, followed by the implementation of a forecasting dashboard.
@@ -85,6 +85,7 @@ The above countries are selected to represent the global based on the following 
 
 ## Deployment - Time Series Dashboard
 Sample:
+
 ![image](https://github.com/c-wei20/Data-Science-Projects/assets/80091094/427935a7-a30c-4cf3-96d9-f9186bb2fa7d)
 ![image](https://github.com/c-wei20/Data-Science-Projects/assets/80091094/18fcc06d-4564-4787-a565-918c48c2bbe0)
 ![image](https://github.com/c-wei20/Data-Science-Projects/assets/80091094/6352b7e1-5cfb-4cd8-8530-c5a34e247d4d)
