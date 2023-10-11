@@ -49,10 +49,13 @@ Among those datasets, Precipitation is used for the forecasting of Hydroelectric
 
 # Data Selection:
 Due to time and workload constraints, this project has selected 3 renewable energy sources and 6 countries to fulfil the project's aim and objectives.
+
 **Renewable Energy Selection:**
+
 This project selected 3 main renewable energy sources that generate electricity, which are hydro, wind, and solar renewable energy. These selected renewable resources generated 91% of renewable electricity in 2021.
 
 **Countries Selection:**
+
 This project selected the following countries as the representation of the "Global" renewable energy trend:
 1. The United States
 2. Canada
@@ -69,7 +72,7 @@ The above countries are selected to represent the global based on the following 
 - The United States, China and Germany are the top 5 countries in renewable energy investment.
 
 **Resources:**
-1. IRENA Renewable Energy Statistics 2023: chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://mc-cd8320d4-36a1-40ac-83cc-3389-cdn-endpoint.azureedge.net/-/media/Files/IRENA/Agency/Publication/2023/Jul/IRENA_Renewable_energy_statistics_2023.pdf?rev=7b2f44c294b84cad9a27fc24949d2134
+1. IRENA Renewable Energy Statistics 2023: https://mc-cd8320d4-36a1-40ac-83cc-3389-cdn-endpoint.azureedge.net/-/media/Files/IRENA/Agency/Publication/2023/Jul/IRENA_Renewable_energy_statistics_2023.pdf?rev=7b2f44c294b84cad9a27fc24949d2134
 2. Statista: https://www.statista.com/statistics/267233/renewable-energy-capacity-worldwide-by-country/
 3. World Investment Report 2023: https://unctad.org/publication/world-investment-report-2023
 4. Website Resource: https://www.nsenergybusiness.com/features/top-countries-renewable-energy-investment/
