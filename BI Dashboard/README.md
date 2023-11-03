@@ -1,5 +1,6 @@
 # Bicycle Equitements Store BI Dashboard
 Below are the layout of the developed BI Dashboard:
+
 ![image](https://github.com/c-wei20/Data-Science-Projects/assets/80091094/fb563ec3-7285-4733-896b-968ac2c00dc9)
 
 ![image](https://github.com/c-wei20/Data-Science-Projects/assets/80091094/4eb8e935-cd16-4ce0-8176-1e84742bba30)
