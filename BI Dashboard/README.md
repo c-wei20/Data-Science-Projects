@@ -1,4 +1,6 @@
 # Bicycle Equitements Store BI Dashboard
+This project provides a business analytics solution by designing a Multi-Dimensional model with the given data warehouse resource and developing a business performance dashboard using Power BI to provide new insight based on the visualization findings.
+
 Below are the layout of the developed BI Dashboard:
 
 ![image](https://github.com/c-wei20/Data-Science-Projects/assets/80091094/fb563ec3-7285-4733-896b-968ac2c00dc9)
