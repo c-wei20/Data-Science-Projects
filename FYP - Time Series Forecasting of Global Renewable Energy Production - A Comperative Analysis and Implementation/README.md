@@ -1,7 +1,7 @@
 # Time Series Forecasting of Global Renewable Energy Production: A Comparative Analysis and Implementation
 This is a Data Analytics project for the final-year study of a Bachelor's Degree in Computer Science with a specialism in Data Analytics.
 
-This project mainly focuses on the development of time series forecasting models and their comparative analysis, followed by the implementation of a forecasting dashboard.
+This project mainly focuses on the development of time series forecasting models and their comparative analysis, followed by the implementation of a web based forecasting dashboard (https://renew-energy-forecast-web-dashboard.streamlit.app/).
 
 This project contributed to resolve the following problems with its aim and objectives:
 ## Problem Statements
